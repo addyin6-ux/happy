@@ -1,6 +1,6 @@
 ﻿# config.py
 import os
-from pydantic import BaseSettings
+from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
     APP_NAME: str = "LoanMarketplace"
@@ -20,3 +20,4 @@ class Settings(BaseSettings):
 
 def SettingsFactory():
     return Settings()
+
