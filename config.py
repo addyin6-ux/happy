@@ -1,6 +1,6 @@
 # config.py
 import os
-from pydantic_settings import BaseSettings
+from pydantic_settings import BaseSettings   # ✅ Correct import
 
 class Settings(BaseSettings):
     APP_NAME: str = "LoanMarketplace"
